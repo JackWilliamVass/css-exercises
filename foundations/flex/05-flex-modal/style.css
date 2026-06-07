@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* Columns makes no sense to use? */
+  display: flex;
+  padding: 12px;
 }
 
 .icon {
@@ -66,4 +69,29 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.icon-container {
+  padding: 8px;
+  flex: 1;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 22px;
 }
